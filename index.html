@@ -19,7 +19,9 @@ main{max-width:1120px;margin:0 auto;padding:0 20px 56px}
 h1,h2,h3{font-family:"Bricolage",Georgia,serif;font-weight:800;letter-spacing:-.025em;margin:0}
 h1{font-size:clamp(40px,8vw,84px);line-height:.98;max-width:900px;margin-top:24px}
 h1 em{font-style:normal;color:var(--acc)}
-.intro{max-width:640px;margin:24px 0 0;color:#D9D4CB;font-size:19px}
+.hi{display:flex;gap:20px;align-items:flex-start;margin-top:28px;max-width:760px}.hi img{flex:none;width:96px;height:96px;border-radius:50%;box-shadow:0 0 0 3px var(--bg),0 0 0 4px var(--line)}
+.intro{margin:0;color:#D9D4CB;font-size:19px}
+@media (max-width:560px){.hi{flex-direction:column;gap:16px}.hi img{width:72px;height:72px}}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 0}
 .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:10px;background:var(--acc);color:#15171B;font-weight:600;text-decoration:none;transition:transform .15s ease-out,filter .15s ease-out}
 .btn:hover{filter:brightness(1.06)}.btn:active{transform:scale(.97)}
@@ -30,7 +32,7 @@ h2{font-size:clamp(28px,4vw,40px);margin:72px 0 8px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:20px}
 .card{background:var(--s);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease-out,border-color .2s ease-out}
 .card:hover{transform:translateY(-2px);border-color:#3E434B}
-.card img{display:block;width:100%;height:auto;aspect-ratio:640/385;background:var(--s2)}
+.card img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:left top;background:var(--s2);border-bottom:1px solid var(--line)}
 .body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
 .tag{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px;font:500 12px "Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase}
 .tag span{color:var(--acc)}.tag .s{color:var(--mut)}
@@ -48,45 +50,45 @@ footer{margin-top:72px;padding-top:24px;border-top:1px solid var(--line);color:v
 </style></head><body><main>
 <div class="wm"><b></b>Ha Le · software studio</div>
 <h1>I build tools that <em>do the work</em> for small teams.</h1>
-<p class="intro">Hi, I'm Ha Le. I build automation, AI tools, dashboards and web apps for small teams. Every project below is a working sample I made for a fictional business, with code you can read, tests you can run, and a one page case study of what I measured.</p>
+<div class="hi"><img src="img/ha-192.webp" width="96" height="96" alt="Ha Le"><p class="intro">Hi, I'm Ha Le. I build automation, AI tools, dashboards and web apps for small teams. Every project below is a working sample I made for a fictional business, with code you can read, tests you can run, and a one page case study of what I measured.</p></div>
 <div class="cta"><a class="btn" href="https://www.upwork.com/freelancers/~01aba23b4c7cbbbe9b">Hire me on Upwork</a><a class="btn g" href="https://www.fiverr.com/ha_le_dev">See my Fiverr gigs</a></div>
 <h2>Sample projects</h2>
 <p class="lead">Each one is built around a made up business and uses invented or public data only. No client data appears anywhere on this page.</p>
 <div class="grid">
 <article class="card">
-<img src="img/vibe-fix-demo-640.webp" srcset="img/vibe-fix-demo-640.webp 640w, img/vibe-fix-demo-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Mossy Paws booking app, gallery image">
+<img src="img/vibe-fix-demo-app-640.webp" srcset="img/vibe-fix-demo-app-640.webp 640w, img/vibe-fix-demo-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Mossy Paws booking app, screenshot of the running app">
 <div class="body"><p class="tag"><span>Fix an AI-built app</span><span class="s">Sample, fictional business</span></p>
 <h3>Mossy Paws booking app</h3><p>Took an app written by an AI builder from a failing build to tested and secure, and cut the dashboard from 5.78 MB to 88 KB per load.</p><p class="links"><a href="case-studies/vibe-fix-demo.pdf" aria-label="Case study PDF for Mossy Paws booking app">Case study</a><a href="https://github.com/vanthienha199/ai-app-fix-demo" aria-label="Source code for Mossy Paws booking app">Code</a></p></div></article>
 <article class="card">
-<img src="img/data-pipeline-demo-640.webp" srcset="img/data-pipeline-demo-640.webp 640w, img/data-pipeline-demo-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Copper Kettle daily KPIs, gallery image">
+<img src="img/data-pipeline-demo-app-640.webp" srcset="img/data-pipeline-demo-app-640.webp 640w, img/data-pipeline-demo-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Copper Kettle daily KPIs, screenshot of the running app">
 <div class="body"><p class="tag"><span>Data pipeline</span><span class="s">Sample, fictional business</span></p>
 <h3>Copper Kettle daily KPIs</h3><p>Turns messy sales exports and order webhooks into a tested KPI page that rebuilds itself every morning, with 40 data tests on every run.</p><p class="links"><a href="case-studies/data-pipeline-demo.pdf" aria-label="Case study PDF for Copper Kettle daily KPIs">Case study</a><a href="https://github.com/vanthienha199/data-pipeline-demo" aria-label="Source code for Copper Kettle daily KPIs">Code</a><a href="https://vanthienha199.github.io/data-pipeline-demo/" aria-label="Live version of Copper Kettle daily KPIs">Live</a></p></div></article>
 <article class="card">
-<img src="img/doc-assistant-citations-640.webp" srcset="img/doc-assistant-citations-640.webp 640w, img/doc-assistant-citations-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Blue Harbor support assistant, gallery image" loading="lazy" decoding="async">
+<img src="img/doc-assistant-citations-app-640.webp" srcset="img/doc-assistant-citations-app-640.webp 640w, img/doc-assistant-citations-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Blue Harbor support assistant, screenshot of the running app" loading="lazy" decoding="async">
 <div class="body"><p class="tag"><span>AI assistant on your documents</span><span class="s">Sample, fictional business</span></p>
 <h3>Blue Harbor support assistant</h3><p>Answers only from a company&#x27;s own documents, cites the passage behind every claim, and says so when the documents do not cover a question.</p><p class="links"><a href="case-studies/doc-assistant-citations.pdf" aria-label="Case study PDF for Blue Harbor support assistant">Case study</a><a href="https://github.com/vanthienha199/ai-docs-assistant-demo" aria-label="Source code for Blue Harbor support assistant">Code</a></p></div></article>
 <article class="card">
-<img src="img/ai-agent-automation-demo-640.webp" srcset="img/ai-agent-automation-demo-640.webp 640w, img/ai-agent-automation-demo-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Fernwood inbound lead agent, gallery image" loading="lazy" decoding="async">
+<img src="img/ai-agent-automation-demo-app-640.webp" srcset="img/ai-agent-automation-demo-app-640.webp 640w, img/ai-agent-automation-demo-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Fernwood inbound lead agent, screenshot of the running app" loading="lazy" decoding="async">
 <div class="body"><p class="tag"><span>AI agent</span><span class="s">Sample, fictional business</span></p>
 <h3>Fernwood inbound lead agent</h3><p>Works an inbound lead inbox with eight tools, logs every call, and waits for a person before anything is sent.</p><p class="links"><a href="case-studies/ai-agent-automation-demo.pdf" aria-label="Case study PDF for Fernwood inbound lead agent">Case study</a><a href="https://github.com/vanthienha199/inbound-lead-agent" aria-label="Source code for Fernwood inbound lead agent">Code</a></p></div></article>
 <article class="card">
-<img src="img/stripe-payments-demo-640.webp" srcset="img/stripe-payments-demo-640.webp 640w, img/stripe-payments-demo-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Fieldnote checkout and billing, gallery image" loading="lazy" decoding="async">
+<img src="img/stripe-payments-demo-app-640.webp" srcset="img/stripe-payments-demo-app-640.webp 640w, img/stripe-payments-demo-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Fieldnote checkout and billing, screenshot of the running app" loading="lazy" decoding="async">
 <div class="body"><p class="tag"><span>Stripe payments</span><span class="s">Sample, fictional business</span></p>
 <h3>Fieldnote checkout and billing</h3><p>One-time and subscription checkout with a signed webhook that keeps orders in sync, with 10 of 10 end to end checks passing.</p><p class="links"><a href="case-studies/stripe-payments-demo.pdf" aria-label="Case study PDF for Fieldnote checkout and billing">Case study</a><a href="https://github.com/vanthienha199/stripe-payments-demo" aria-label="Source code for Fieldnote checkout and billing">Code</a></p></div></article>
 <article class="card">
-<img src="img/python-pdf-extract-demo-640.webp" srcset="img/python-pdf-extract-demo-640.webp 640w, img/python-pdf-extract-demo-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Invoice PDFs to a spreadsheet, gallery image" loading="lazy" decoding="async">
+<img src="img/python-pdf-extract-demo-app-640.webp" srcset="img/python-pdf-extract-demo-app-640.webp 640w, img/python-pdf-extract-demo-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Invoice PDFs to a spreadsheet, screenshot of the running app" loading="lazy" decoding="async">
 <div class="body"><p class="tag"><span>Python automation</span><span class="s">Sample, fictional business</span></p>
 <h3>Invoice PDFs to a spreadsheet</h3><p>Reads a folder of awkward invoices into one spreadsheet and checks its own math. 19 of 20 go straight through and 1 is held for review.</p><p class="links"><a href="case-studies/python-pdf-extract-demo.pdf" aria-label="Case study PDF for Invoice PDFs to a spreadsheet">Case study</a><a href="https://github.com/vanthienha199/pdf-invoice-extractor-demo" aria-label="Source code for Invoice PDFs to a spreadsheet">Code</a></p></div></article>
 <article class="card">
-<img src="img/catalog-watcher-640.webp" srcset="img/catalog-watcher-640.webp 640w, img/catalog-watcher-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Catalogue price watcher, gallery image" loading="lazy" decoding="async">
+<img src="img/catalog-watcher-app-640.webp" srcset="img/catalog-watcher-app-640.webp 640w, img/catalog-watcher-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Catalogue price watcher, screenshot of the running app" loading="lazy" decoding="async">
 <div class="body"><p class="tag"><span>Scraping</span><span class="s">Sample, fictional business</span></p>
 <h3>Catalogue price watcher</h3><p>Crawls a product catalogue on a schedule, keeps every run, and leads its report with what changed since last time.</p><p class="links"><a href="case-studies/catalog-watcher.pdf" aria-label="Case study PDF for Catalogue price watcher">Case study</a><a href="https://github.com/vanthienha199/catalog-watcher-demo" aria-label="Source code for Catalogue price watcher">Code</a></p></div></article>
 <article class="card">
-<img src="img/landing-page-demo-640.webp" srcset="img/landing-page-demo-640.webp 640w, img/landing-page-demo-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Conebook landing page, gallery image" loading="lazy" decoding="async">
+<img src="img/landing-page-demo-app-640.webp" srcset="img/landing-page-demo-app-640.webp 640w, img/landing-page-demo-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Conebook landing page, screenshot of the running app" loading="lazy" decoding="async">
 <div class="body"><p class="tag"><span>Landing page</span><span class="s">Sample, fictional business</span></p>
 <h3>Conebook landing page</h3><p>A hand-designed landing page that scores 100 in all four mobile Lighthouse categories, with a validated waitlist form.</p><p class="links"><a href="case-studies/landing-page-demo.pdf" aria-label="Case study PDF for Conebook landing page">Case study</a><a href="https://github.com/vanthienha199/conebook-landing-page" aria-label="Source code for Conebook landing page">Code</a><a href="https://vanthienha199.github.io/conebook-landing-page/" aria-label="Live version of Conebook landing page">Live</a></p></div></article>
 <article class="card">
-<img src="img/chrome-extension-page-notes-640.webp" srcset="img/chrome-extension-page-notes-640.webp 640w, img/chrome-extension-page-notes-1280.webp 1280w" sizes="(min-width: 760px) 520px, 100vw" width="640" height="385" alt="Page Notes, gallery image" loading="lazy" decoding="async">
+<img src="img/chrome-extension-page-notes-app-640.webp" srcset="img/chrome-extension-page-notes-app-640.webp 640w, img/chrome-extension-page-notes-app-1280.webp 1280w" sizes="(min-width: 760px) 360px, 100vw" width="640" height="400" alt="Page Notes, screenshot of the running app" loading="lazy" decoding="async">
 <div class="body"><p class="tag"><span>Chrome extension</span><span class="s">Sample, fictional business</span></p>
 <h3>Page Notes</h3><p>Highlights and notes that come back on every visit, using only three permissions and sending nothing off the browser.</p><p class="links"><a href="case-studies/chrome-extension-page-notes.pdf" aria-label="Case study PDF for Page Notes">Case study</a><a href="https://github.com/vanthienha199/page-notes-chrome-extension" aria-label="Source code for Page Notes">Code</a></p></div></article>
 </div>
