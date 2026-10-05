@@ -25,7 +25,7 @@ h1{font-size:clamp(46px,7.4vw,92px);line-height:.98;letter-spacing:-.03em}
 .lead{font-size:20px;color:var(--mut);max-width:560px;margin:28px 0 0}
 .cta{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-weight:600;font-size:18px}
 .me{position:relative;margin-top:18px}
-.me img.ph{display:block;width:100%;height:auto;aspect-ratio:420/520;object-fit:cover;transform:translate(10px,0);box-shadow:-10px 10px 0 var(--line)}
+.me img.ph{display:block;width:100%;height:auto;aspect-ratio:420/520;object-fit:cover;transform:translate(10px,0);box-shadow:-10px 10px 0 var(--line);filter:saturate(.92)}
 .me .cap{font-size:14px;color:var(--mut);margin-top:16px}.sig{display:block;height:54px;width:auto;margin-top:10px;mix-blend-mode:multiply}
 .feat{background:#FBF6EC;margin:0 calc(50% - 50vw);padding:64px max(24px,calc(50vw - 556px));display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);gap:48px;align-items:center;--acc:#4F7A3A}
 .feat .kind{color:#4F7A3A;font-weight:600;margin:0 0 10px}
@@ -34,7 +34,7 @@ h1{font-size:clamp(46px,7.4vw,92px);line-height:.98;letter-spacing:-.03em}
 .feat .res{font-family:"Literata",serif;font-size:30px;margin:22px 0 0;color:#4F7A3A}
 .collage{position:relative;aspect-ratio:16/12}
 .collage img{position:absolute;display:block;height:auto;border:1px solid #E6DDCB;box-shadow:0 1px 2px rgba(42,38,32,.08),0 20px 40px -24px rgba(42,38,32,.45);background:#fff}
-.collage .a{left:0;top:0;width:82%;border-radius:10px}.collage .b{right:0;bottom:0;width:46%;border-radius:10px}
+.collage .a{left:0;top:0;width:82%;border-radius:10px}.collage .b{right:0;bottom:4%;width:56%;border-radius:12px}
 h2.sec{font-size:clamp(30px,3.6vw,44px);letter-spacing:-.02em;margin:88px 0 8px}
 p.sub{color:var(--mut);margin:0 0 30px;max-width:640px}
 .mosaic{display:grid;grid-template-columns:1.05fr 1fr;grid-template-rows:auto auto;gap:44px 36px}
@@ -60,15 +60,15 @@ footer{color:var(--mut);font-size:14.5px;margin-top:40px}
 </style></head><body><main>
 <nav class="top"><span>Ha Le</span><span><a href="#work">Work</a><a href="#how">How I work</a><a href="https://www.upwork.com/freelancers/~01aba23b4c7cbbbe9b">Upwork</a></span></nav>
 <section class="intro">
-<div><h1>I build automation, AI tools, dashboards and web apps for small teams.</h1>
-<p class="lead">Every project below is a working sample I built for a business I made up, with code you can read, tests you can run, and a one page case study of what I measured.</p>
+<div><h1>I build the tools small teams wish they had.</h1>
+<p class="lead">Automation, AI tools, dashboards and web apps. Every project below is a working sample I built for a business I made up, with code you can read, tests you can run, and a one page case study of what I measured.</p>
 <p class="cta"><a href="https://www.upwork.com/freelancers/~01aba23b4c7cbbbe9b">Hire me on Upwork</a><a href="https://www.fiverr.com/ha_le_dev">See my Fiverr gigs</a></p></div>
 <figure class="me"><img class="ph" src="img/ha.webp" width="420" height="520" alt="Ha Le"><figcaption class="cap">Ha Le, Orlando, Florida</figcaption></figure>
 </section>
 <section class="feat" id="work" style="--acc:#4F7A3A">
 <div><p class="kind">AI-built app, rescued</p><h2>Mossy Paws</h2><p class="what">A dog groomer&#x27;s booking app, as an AI builder left it, made secure, fast and tested. The build failed, a secret key shipped to every browser and the staff page leaked customer data. I fixed it in four commits you can read one by one.</p>
 <p class="res">5.78 MB to 88 KB per page</p><p class="lk"><a href="case-studies/vibe-fix-demo.pdf">Case study</a><a href="https://github.com/vanthienha199/ai-app-fix-demo.">Code</a></p></div>
-<div class="collage"><img class="a" src="img/f-booking.webp" alt="Mossy Paws booking, step one with dog photos" width="1100" height="688"><img class="b" src="img/f-booked.webp" alt="Mossy Paws confirmation" width="760" height="570" loading="lazy"></div>
+<div class="collage"><img class="a" src="img/f-booking.webp" alt="Mossy Paws booking, step one with dog photos" width="1100" height="688"><img class="b" src="img/f-booked.webp" alt="Mossy Paws confirmation" width="760" height="339" loading="lazy"></div>
 </section>
 <h2 class="sec">More work</h2><p class="sub">Each project has its own look, because each business would. All of them are samples with invented data.</p>
 <div class="mosaic"><article class="tile tall" style="--acc:#6B2D5C"><a class="pic" href="case-studies/stripe-payments-demo.pdf" aria-label="Fieldnote case study"><img src="img/m-stripe-payments-demo.webp" alt="Fieldnote, Stripe checkout and billing" loading="lazy" decoding="async"></a>
